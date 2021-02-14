@@ -67,7 +67,7 @@
     },
     {
       "file": "script.js",
-      "description": "### Using template literals\n\nIn this console.log we use template literals. This is indicated by the small backticks: \\` at the start and end of the text. When we write our strings this way, we can mix text with varaibles and it will add the content of the variable to the string! Here we use the variable `sumToPay` in the text.",
+      "description": "### Using template literals\n\nIn this console.log we use template literals. This is indicated by the small backticks: \\` at the start and end of the text. When we write our strings this way, we can mix text with varaibles and it will add the content of the variable to the string! Here we use the variable `sumToPay` in the text.\n\nThats all for this tour! If you want to take the next tour about DOM-Manipulation, check out the branch \"dom\" in this repo by opening the commad line in the editor and typing \n>> git checkout dom\n\non the command line. You can also just click on the command above!",
       "line": 65,
       "title": "using template literals"
     }
