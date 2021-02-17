@@ -1,0 +1,62 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "DomManipulation",
+  "steps": [
+    {
+      "file": "script.js",
+      "description": "### Create Objects \n\nFirst we create some objects. We will use the information stored in the objects later in the code. ",
+      "line": 3
+    },
+    {
+      "file": "script.js",
+      "description": "### The document object\n\nWhen we do Dom-Manipulation we often use the object `document`. This is an object that exists in the browser. This means that we don't need to define it, but can access it in our code just by typing `document`. \nIn this object we find a representation of our website. You can inspect the whole document in the console of the browser.\nThe object also has predefined properties and methods, that allow us to change the content of the document. In this code we use some of the methods, such as `createElement` and `querySelector`. ",
+      "line": 52
+    },
+    {
+      "file": "script.js",
+      "description": "### Insert some Text\n\nWhen we want to add some content (usually text) to our page using JavaScript, wee need to do 3 things: \n1. Create an element. Here we create a \\<p\\> -tag\n2. Add some content to the element. To do this we change the value of the property `innerText`. With this property we can insert some regular text into the p -tag.  \n3. Find a target-element to which we attach the element we just created. Here we use the method `append()` which inserts the p-tag and its content at the end of our target element (before the closing tag of the target element).\nWith the method `prepend()` we can insert the created element to the beginning of the target.\n\n``` html \n <div class=\"checkout\"> \n       a prepended element will be inserted here\n   <p> Some other content <p>\n    our appended element will be inserted here\n    </div>  \n```\n",
+      "line": 56,
+      "selection": {
+        "start": {
+          "line": 56,
+          "character": 1
+        },
+        "end": {
+          "line": 60,
+          "character": 1
+        }
+      }
+    },
+    {
+      "file": "script.js",
+      "description": "### Make things happen on a click\n\nUsually we want to change the content of the page only when the user does something. In our example we want to display the sum of the items in the shopping basket only when the user has clicked on the button \"Go to checkout\".\nIn order to react on a click, we need to add an \"Event Listener\" to the button. \nTo add an event listener, we first grab the element (the button with the class \"buy\") using the method `querySelector`.\nThen we use the method `addEventListener` on the element.  \nAn event listener is a function (but we call it a method, since it 'belongs' to the target we attach it to) that takes the name of an event (a click) as a first argument and a callback function as a second argument. There are many different events we can listen to, but the most common one is a click. The callback function is a regular function, but it will be called only when the button is clicked. \n\n",
+      "line": 95
+    },
+    {
+      "file": "script.js",
+      "description": "### The callback function (1)\n\nThe function `displaySum` is a regular function, but it is called only when we click the button \"Go to checkout\". In this function, we create a new p-tag element, call an other function (defined in line 42), which calculates the sum of the items in our array \"basket\", and adds the result of the function as text in the p-tag. In the last step, the p-tag is added to the div with the class 'checkout'. Only then can we see the text on the page!",
+      "line": 84
+    },
+    {
+      "file": "script.js",
+      "description": "### Find all buttons!\n\nHere we use the method `querySelectorAll` to find **all** the buttons with the class 'btn' embedded in the div with the class 'products'. This method returns an array with all 3 buttons, and in line 78 we loop through this array (using a `forEach`-loop) and add an event listener to each button. We will have a closer look at the event listener in the next step!",
+      "line": 76
+    },
+    {
+      "file": "script.js",
+      "description": "### The callback function (2)\n\nThis is our most complicated function so far! And we use it on 3 buttons in our code!\n\nWhen we click on one of the buttons, an event-object is created. It is an object with a lot of information about the click. We can find out what caused the event, where on the page it happened, and most important for us: on which element the event happened (the target of the event).  \n\nThis event is the only argument in the function, and we use the information stored in the event to find out which of the 3 buttons were clicked. ",
+      "line": 62
+    },
+    {
+      "file": "script.js",
+      "description": "### Find the item we clicked!\n\nWe know which item we clicked on by looking at the id of the event: `event.target.id`. We then use the id to find the object that corresponds to the item we clicked on. If we click on the button with the id \"Socks\", we need to find the object in which we store the information about the socks. \n\nAll of our objects are stored in the array 'products' and with the method `find` we can look through the array, and pick out the item that has the same text stored in the property `description` as we have in the `event.target.id`. The `find` method returns the object for which there is a match between description and id. \nOnce we have the right object, we  add it to the array \"basket\" by calling the function `addToBasket`. ",
+      "line": 64
+    },
+    {
+      "file": "script.js",
+      "description": "### Add the item to the shopping basket\n\nIn order to see the name of the item we just added to the basket on the page, we create a list item, fill it with the text stored in the object in the property `description` and insert it in the list (an empty \\<ul\\> tag with the class 'listOfItems' ). Now, each time we click on an item, it is added to the list of items in our basket.",
+      "line": 70
+    }
+  ],
+  "ref": "dom"
+}

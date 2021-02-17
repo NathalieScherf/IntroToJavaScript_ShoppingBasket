@@ -1,7 +1,5 @@
 console.log('Hi!, This is my online shop!')
 
-// we need an object: 
-// var tshirt , const tshirt  key: value
 let tshirt = {
   color: "red with orange dotts",
   price: 25,
@@ -27,9 +25,6 @@ let shorts = {
   description: 'Shorts'
 }
 
-
-// our items on the shelf: 
-
 let products = [ tshirt, socks, shorts ]
 
 let basket = []
@@ -54,14 +49,14 @@ const calculateSum = (someBasket) => {
 }
 
 // console.log(window);
-// console.log(document);
+console.log(document);
 
 // insert content:
 
-// let p = document.createElement('p')
-// p.innerText = sumOfMyShopping
-// // pick out the div with the class checkout, and add the p-element we created:
-// document.querySelector('.checkout').append(p)
+let p = document.createElement('p')
+p.innerText = "a basic example of text created and added to the page by JavaScript!"
+// pick out the div with the class checkout, and add the p-element we created:
+document.querySelector('.checkout').append(p)
 
 // Callback function for Event listner function:
 const addToCartOnClick = (event) => {
@@ -87,7 +82,6 @@ addToCartButtons.forEach((button) => {
 // Function to display the sum: 
 
 const displaySum = () => {
-
 let p = document.createElement('p')
 let sum = calculateSum(basket)
 p.innerText = `Please pay ${sum} Euro.`
@@ -99,5 +93,4 @@ document.querySelector('.checkout').append(p)
 // And dispaly the amount to pay.
 
 let checkoutButton = document.querySelector('.buy')
-
 checkoutButton.addEventListener('click', () => displaySum())
