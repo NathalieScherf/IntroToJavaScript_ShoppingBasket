@@ -12,8 +12,9 @@ There are 2 branches in this repo:
 
 
 These are the photos I use in the shop:
-https://unsplash.com/photos/Won79_9oUEk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
-https://unsplash.com/photos/XMg8GBzNmgA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+[thsirt](https://unsplash.com/photos/Won79_9oUEk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
-https://unsplash.com/photos/Hd4nlxLgIbA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+[socks](https://unsplash.com/photos/XMg8GBzNmgA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+
+[shorts](https://unsplash.com/photos/Hd4nlxLgIbA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
