@@ -15,14 +15,14 @@
     },
     {
       "file": "script.js",
-      "description": "### Create an object\n\nHere we create our first variable with the name \"shirt\". The varaible is cerated (or declared) with the keyword `let`. In the varaible we store an object. Whenever we want to use the object, we will refere to it by the name 'shirt'",
+      "description": "### Create an object\n\nHere we create our first variable with the name \"shirt\". The variable is created (or declared) with the keyword `let`. In the variable we store an object. Whenever we want to use the object, we will refere to it by the name 'shirt'",
       "line": 5,
       "title": "create an object"
     },
     {
       "file": "script.js",
       "description": "### Print the object on the console\n\nSee the content of the variable 'shirt' on the console of your browser.",
-      "line": 11,
+      "line": 13,
       "title": "log an object"
     },
     {
@@ -58,17 +58,17 @@
     {
       "file": "script.js",
       "description": "### Use a function to calculate the sum\n\nWe are done shopping now and need to pay for our items. First we need to find out how much our products cost. For this we need a function. This function takes any basket as input. When we call, it we pass our shopping basket to the function. \nThis function will look through the content of our basket and return the sum of the prize of all items in the basket. \n\nSteps in the function:\n1. In the beginning the sum is 0. \n2. We use a `for of` loop to go through the items in the basket. A  `for of` loop is a piece of code that we use with arrays. The code is repeated once for each element in the array, in our case once for each item in the basket.  \n3. In the loop, we look for the prize of each item and add the prize to the total sum. \n4. When the loop is done, the function returns the sum of all items we have shopped. ",
-      "line": 52
+      "line": 50
     },
     {
       "file": "script.js",
       "description": "### Calling a function with a return value\n\nThe function `checkout` has a return vaule. This means that the function has an output or a result. We want to use this return value later in the code, so we need to store it somewhere. Here we store it in the variable `sumToPay`.",
-      "line": 61
+      "line": 59
     },
     {
       "file": "script.js",
-      "description": "### Using template literals\n\nIn this console.log we use template literals. This is indicated by the small backticks: \\` at the start and end of the text. When we write our strings this way, we can mix text with varaibles and it will add the content of the variable to the string! Here we use the variable `sumToPay` in the text.\n\nThats all for this tour! If you want to take the next tour about DOM-Manipulation, check out the branch \"dom\" in this repo by opening the commad line in the editor and typing \n>> git checkout dom\n\non the command line. You can also just click on the command above!",
-      "line": 65,
+      "description": "### Using template literals\n\nIn this console.log we use template literals. This is indicated by the small backticks: \\` at the start and end of the text. When we write our strings this way, we can mix text with variables and it will add the content of the variable to the string! Here we use the variable `sumToPay` in the text.\n\nThat's all for this tour! If you want to take the next tour about DOM-Manipulation, check out the branch \"dom\" in this repo by opening the commad line in the editor and typing \n>> git checkout dom\n\non the command line. You can also just click on the command above!",
+      "line": 61,
       "title": "using template literals"
     }
   ]
